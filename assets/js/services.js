@@ -62,13 +62,7 @@ app.service('API', function($q, $http)
               console.log(config.url + " : " + response.data);
               console.log(response.data);
 
-              if (response.data.success) {
-                  deferred.resolve(response.data);
-              }
-              else
-              {
-                  deferred.reject(response.data);
-              }
+              deferred.resolve(response.data);
           },
           function(response)
           {
