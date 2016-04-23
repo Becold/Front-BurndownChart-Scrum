@@ -1,9 +1,6 @@
 /**
 * API
 */
-
-var api_url = "http://localhost:3000/";
-
 app.service('API', function($q, $http)
 {
     var _this = this;
@@ -13,7 +10,7 @@ app.service('API', function($q, $http)
     {
         return this.request({
             method: 'GET',
-            url: api_url + url,
+            url: api_url + url
         });
     }
 
@@ -44,7 +41,7 @@ app.service('API', function($q, $http)
     {
         return this.request({
             method: 'DELETE',
-            url: api_url + url,
+            url: api_url + url
         });
     }
 

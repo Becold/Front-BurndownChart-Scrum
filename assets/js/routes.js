@@ -1,16 +1,13 @@
 
 app.config(['$routeProvider', function($routeProvider) {
+
     $routeProvider
-    /*
-     *         - Clients
-     */
-      .when('/openChart', {
+      .when('/openchart', {
           templateUrl: 'assets/templates/openchart.html',
           controller: 'opengraphCtrl'
       })
 
-
       .otherwise({
-          redirectTo: 'openChart'
+          redirectTo: 'openchart'
       });
 }]);
